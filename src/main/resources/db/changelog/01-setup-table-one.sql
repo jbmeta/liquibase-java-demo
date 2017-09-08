@@ -3,12 +3,26 @@
 --changeset jbm:1
 CREATE TABLE TableOne
 (
-    PersonID int,
-    FirstName TEXT
+    PlanetID int,
+    PlanetName TEXT
 );
 
 INSERT INTO TableOne
-    (PersonID, FirstName)
+    (PlanetID, PlanetName)
 VALUES
-    (1, 'Elon');
-    
+    (1, 'Mercury');
+
+INSERT INTO TableOne
+    (PlanetID, PlanetName)
+VALUES
+    (2, 'Venus');
+
+INSERT INTO TableOne
+    (PlanetID, PlanetName)
+VALUES
+    (3, 'Earth');
+
+INSERT INTO TableOne
+    (PlanetID, PlanetName)
+VALUES
+    (4, 'Mars');
