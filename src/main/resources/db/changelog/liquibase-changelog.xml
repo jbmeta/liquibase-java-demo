@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog 
-  xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
-  <include file="01-create-table-one.sql" relativeToChangelogFile="true"/>
-  <include file="02-create-table-two.sql" relativeToChangelogFile="true"/>
-  <include file="03-create-table-three.sql" relativeToChangelogFile="true"/>
-  <include file="04-insert-data-fname.sql" relativeToChangelogFile="true"/>
-  <include file="05-insert-data-lname.sql" relativeToChangelogFile="true"/>
-  <include file="06-insert-data-city.sql" relativeToChangelogFile="true"/>
-  <!-- <includeAll path="/" />> not working for some reason -->
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+	<include file="01-setup-table-one.sql" relativeToChangelogFile="true"/>
+	<include file="02-add-data-table-one.sql" relativeToChangelogFile="true"/>
+	<include file="02-setup-table-two.sql" relativeToChangelogFile="true"/>
+	<!-- <includeAll path="/" relativeToChangelogFile="true"/> -->
+	<!-- include all changesets. doesn't work with latest springboot & liquibase -->
 </databaseChangeLog>
