@@ -44,10 +44,6 @@ public class LiquibaseDemoApplication {
 		System.out.println(StringUtils.repeat("=", 100));
 		System.out.println("\nLiquibase has successfully executed all changesets.");
 		System.out.println(StringUtils.repeat("=", 100));
-		
-		
-		
-
 	}
 
 	private static void openConnection() {

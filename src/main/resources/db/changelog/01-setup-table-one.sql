@@ -6,3 +6,9 @@ CREATE TABLE TableOne
     PersonID int,
     FirstName TEXT
 );
+
+INSERT INTO TableOne
+    (PersonID, FirstName)
+VALUES
+    (1, 'Elon');
+    
